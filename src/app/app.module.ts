@@ -3,23 +3,22 @@ import { NgModule } from '@angular/core';
 
 // angular material design
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatTooltip } from '@angular/material';
+import { MaterialModule } from './material/material.module';
 
 
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatTooltip
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
