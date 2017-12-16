@@ -4,6 +4,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
+// hammer js works with angular material design
+import 'hammerjs';
+
 if (environment.production) {
   enableProdMode();
 }
