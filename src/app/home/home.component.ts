@@ -8,9 +8,6 @@ import {  } from '';
 })
 export class HomeComponent implements OnInit {
 
-   // personal photo location
-  photoPath: 'assets/me2.jpg';
-
   constructor() { }
 
   ngOnInit() {
