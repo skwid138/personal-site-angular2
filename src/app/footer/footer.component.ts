@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatIconRegistry } from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-footer',
@@ -14,20 +15,18 @@ export class FooterComponent implements OnInit {
   sender: string;
   message: string;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(private dialog: MatDialog) {}
 
     openDialog(): void {
       const dialogRef = this.dialog.open(FooterDialogComponent, {
         width: '250px',
-        data: { sunject: this.subject, sender: this.sender, message: this.message }
+        data: { subject: this.subject, sender: this.sender, message: this.message }
       });
-
       // this could be used to do something similar
       // to what I did with toast in AngularJS
       dialogRef.afterClosed().subscribe(result => {
         console.log('The dialog was closed');
       });
-
   }
 
   ngOnInit() {
@@ -43,8 +42,8 @@ export class FooterComponent implements OnInit {
   export class FooterDialogComponent  {
 
     constructor(
-      public dialogRef: MatDialogRef<FooterDialogComponent>,
-      @Inject(MAT_DIALOG_DATA) public data: any
+      private dialogRef: MatDialogRef<FooterDialogComponent>,
+      @Inject(MAT_DIALOG_DATA) private data: any
     ) { }
 
     // close the dialog

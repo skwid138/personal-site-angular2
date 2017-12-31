@@ -1,27 +1,29 @@
-<div fxFlex="33" fxLayout="row" fxLayoutAlign.gt-xs="start center" fxLayoutAlign="center center">
-  <p class="textCenter">
-    <b>Phone:</b> 218-341-2264 &nbsp;|&nbsp;
-    <b>Email:</b>
-    <a href="mailto:hunter@rancourt.pro?Subject=Hello%20Hunter" target="_top">hunter@rancourt.pro</a>
-  </p>
-</div>
-<div fxFlex="33" fxLayout="row" fxLayoutAlign.gt-xs="center center" fxLayoutAlign="center center">
-  <button (click)="contactDialog()">
-    <!-- <md-tooltip md-direction="top">Send Me A Message</md-tooltip>
-    <md-icon md-svg-icon="images/svg/mail.svg"></md-icon> -->
-  </button>
-  <!-- LinkedIn has a blob of html to show a cool card I want to add this as an mddialog at some point -->
-  <button href="https://www.linkedin.com/in/hunter-rancourt/"  target="_blank">
-    <!-- <md-tooltip md-direction="top">Check Me Out On LinkedIn</md-tooltip>
-    <md-icon md-svg-icon="images/svg/linked_in.svg"></md-icon> -->
-  </button>
-  <button href="https://github.com/skwid138/"  target="_blank">
-    <!-- <md-tooltip md-direction="top">Check Me Out On GitHub</md-tooltip>
-    <md-icon md-svg-icon="images/svg/github.svg"></md-icon> -->
-  </button>
-</div>
-<div fxFlex="33" fxLayout="row" fxLayoutAlign.gt-xs="end center" fxLayoutAlign="center center">
-  <p>
-    &copy; Hunter Rancourt 2017
-  </p>
+<div fxLayout.gt-xs="row" fxLayout="column" fxLayoutAlign="center center">
+  <div fxFlex="33%" fxLayout="row" fxLayoutAlign.gt-xs="start center" fxLayoutAlign="center center">
+    <p class="textCenter">
+      <b>Phone:</b> 218-341-2264 &nbsp;|&nbsp;
+      <b>Email:</b>
+      <a href="mailto:hunter@rancourt.pro?Subject=Hello%20Hunter" target="_top">hunter@rancourt.pro</a>
+    </p>
+  </div>
+  <div fxFlex="33%" fxLayout="row" fxLayoutAlign.gt-xs="center center" fxLayoutAlign="center center">
+    <button mat-icon-button (click)="contactDialog()" aria-label="Message">
+      <!-- <md-tooltip md-direction="top">Send Me A Message</md-tooltip> -->
+      <mat-icon svgIcon="assets/svg/mail.svg" aria-hidden="true"></mat-icon> 
+    </button>
+    <!-- LinkedIn has a blob of html to show a cool card I want to add this as an mddialog at some point -->
+    <button mat-icon-button href="https://www.linkedin.com/in/hunter-rancourt/"  target="_blank" aria-label="LinkedIn">
+      <!-- <md-tooltip md-direction="top">Check Me Out On LinkedIn</md-tooltip> -->
+      <mat-icon svgIcon="assets/svg/linked_in.svg" aria-hidden="true"></mat-icon>
+    </button>
+    <button mat-icon-button href="https://github.com/skwid138/"  target="_blank" aria-label="GitHub">
+      <!-- <md-tooltip md-direction="top">Check Me Out On GitHub</md-tooltip>  -->
+      <mat-icon svgIcon="assets/svg/github.svg" aria-hidden="true"></mat-icon>
+    </button>
+  </div>
+  <div fxFlex="33%" fxLayout="row" fxLayoutAlign.gt-xs="end center" fxLayoutAlign="center center">
+    <p>
+      &copy; Hunter Rancourt 2017
+    </p>
+  </div>
 </div>
