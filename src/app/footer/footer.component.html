@@ -7,16 +7,16 @@
     </p>
   </div>
   <div fxFlex="33%" fxLayout="row" fxLayoutAlign.gt-xs="center center" fxLayoutAlign="center center">
-    <button mat-icon-button (click)="contactDialog()" aria-label="Message">
+    <button mat-icon-button (click)="contactDialog()" aria-label="Message" matTooltip="Send Me A Message" matTooltipPosition="top">
       <!-- <md-tooltip md-direction="top">Send Me A Message</md-tooltip> -->
-      <mat-icon svgIcon="assets/svg/mail.svg" aria-hidden="true"></mat-icon> 
+      <mat-icon svgIcon="assets/svg/mail.svg" aria-hidden="true" matTooltip="Send Me A Message" matTooltipPosition="top"></mat-icon> 
     </button>
     <!-- LinkedIn has a blob of html to show a cool card I want to add this as an mddialog at some point -->
-    <button mat-icon-button href="https://www.linkedin.com/in/hunter-rancourt/"  target="_blank" aria-label="LinkedIn">
+    <button mat-icon-button href="https://www.linkedin.com/in/hunter-rancourt/"  target="_blank" aria-label="LinkedIn" matTooltip="Check Me Out On LinkedIn" matTooltipPosition="top">
       <!-- <md-tooltip md-direction="top">Check Me Out On LinkedIn</md-tooltip> -->
       <mat-icon svgIcon="assets/svg/linked_in.svg" aria-hidden="true"></mat-icon>
     </button>
-    <button mat-icon-button href="https://github.com/skwid138/"  target="_blank" aria-label="GitHub">
+    <button mat-icon-button href="https://github.com/skwid138/"  target="_blank" aria-label="GitHub" matTooltip="Check Me Out On Github" matTooltipPosition="top">
       <!-- <md-tooltip md-direction="top">Check Me Out On GitHub</md-tooltip>  -->
       <mat-icon svgIcon="assets/svg/github.svg" aria-hidden="true"></mat-icon>
     </button>
