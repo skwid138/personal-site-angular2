@@ -6,3 +6,13 @@ img {
   max-width: 1000px;
 }
 
+.nameHeader {
+  font-size: 50px;
+  font-weight: 400;
+
+}
+
+.titleHeader {
+  font-size: 18px;
+  font-weight: 500;
+}
