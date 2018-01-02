@@ -45,9 +45,13 @@ export class FooterComponent implements OnInit {
       private dialogRef: MatDialogRef<FooterDialogComponent>,
       @Inject(MAT_DIALOG_DATA) private data: any,
       private domSanitizer: DomSanitizer,
-      //private mdIconRegistry: MdIconRegistry
-      // I think I need this for selecting the SVG to santize, but im not sure and it breaks webpack right now
-    ) { }
+      private matIconRegistry: MatIconRegistry
+    ) {
+      matIconRegistry
+        .addSvgIcon('github',
+        domSanitizer.bypassSecurityTrustResourceUrl('./assets/github.svg'));
+
+    }
 
     // close the dialog
     onNoClick(): void {
