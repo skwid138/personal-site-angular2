@@ -16,13 +16,15 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { FooterDialogComponent } from './footer-dialog/footer-dialog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    FooterDialogComponent
   ],
   imports: [
     BrowserModule,

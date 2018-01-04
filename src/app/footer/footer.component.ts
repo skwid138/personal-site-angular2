@@ -17,7 +17,7 @@ export class FooterComponent implements OnInit {
 
   constructor(private dialog: MatDialog) {}
 
-    openDialog(): void {
+  contactDialog(): void {
       const dialogRef = this.dialog.open(FooterDialogComponent, {
         width: '250px',
         data: { subject: this.subject, sender: this.sender, message: this.message }
